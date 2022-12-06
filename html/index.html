@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <img src="image/sea.jpg" alt = "random pic"> <!--ctrl + space for autocompletion of source-->
+    <a href="https://www.google.com/" target="_blank">To enter Google press here!!</a> <!--when we have target blank we go to a new tab-->
+    <!-- self-closing tag -->
+    <br>
+    <hr> <!--just a line-->
+
+    <!-- unordered list -->
+    <ul>
+        <li>hey</li>
+        <li>bye</li>
+    </ul>
+
+    <!-- ordered list -->
+    <ol>
+        <li>hey</li>
+        <li>bye</li>
+    </ol>
+
+
+    <!--
+        дефиниран лист
+    -->
+
+    <dl>
+        <dt> Integer </dt> <!--definition title--> 
+        <dd>12</dd> <!--definition description -->
+    </dl>
+
+    <a href="mailto:hyulia.mustaffa@gmail.com">Write us!</a>
+    <br>
+    <a href="tel:+3593051111">Call us</a>
+    <br>
+    <a href="about.html" target="_blank" rel="noopener noreferrer">About us</a>
+    <br>
+     
+    <table>
+         <!--table headers-->
+            <th>Number</th> 
+            <th>Name</th>
+            <th>Adress</th>
+        <tr> <!--table row-->
+            <td>1</td> <!--table data-->
+            <td>Nencho</td>
+            <td>Sofia</td>
+        </tr>
+        <tr> <!--table row-->
+            <td>2</td>
+            <td>Gancho</td>
+            <td>Petrich</td>
+        </tr>
+    </table>
+    <br>
+    <!--how to autogenerate a table-->
+    <!-- table>tr*2>td*2  "table in which we want table rows * 2 and table data * 2"-->
+
+    <table border="1">
+        <tr>
+            <td colspan="2">hell</td> <!--make a cell to be spanned over two columns-->
+            <td>hell</td>
+        </tr>
+        <tr>
+            <td>hell</td>
+            <td rowspan="2">hell</td> <!--make a cell to be spanned over two rows, that's why we need to delete the td in the third row-->
+            <td>hell</td>
+        </tr>
+        <tr>
+            <td>hell</td>
+            <td>hell</td>
+        </tr>
+    </table>
+
+
+
+    <form action="login" method="post" >
+        <table>
+            <tr>
+                <td><label for="loginid">Login Name:</label></td>
+                <td><input type="text" name="loginid" id="loginid"></td>
+            </tr>
+            <tr>
+                <td><label for="pword">Password:</label></td>
+                <td><input type="password" name="pword" id="pword"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="Login"/>
+                    <input type="reset" value="Clear form"/>
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
